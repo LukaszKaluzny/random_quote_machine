@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
 body {
   background-color: black;
   max-width: 900px;
   width: 100%;
   margin: auto;
+}
+
+header h1 {
+  margin: 20px auto;
 }
 
 h1,
@@ -14,7 +19,7 @@ h3 {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 10px;
   background: #FFFFFF;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -35,15 +40,18 @@ h3 {
   top: 25px;
 }
 
+p,
 h1,
 h2,
-h3 {
+h3,
+.button {
   text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 h2.quote {
   font-size: 2vw;
-  font-style: italic;
+  text-transform: uppercase;
 }
 
 .img-persona img {
@@ -64,7 +72,7 @@ h2.quote {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px 5px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -95,6 +103,11 @@ a {
 .button2:hover {
   background-color: black;
   color: #008CBA;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,8 +32,8 @@ function createTweet(input) {
 $(document).ready(function() {
     getQuote();
     $('.button').click(function() {
+        $('.bubble').fadeOut();
         getQuote();
+        $('.bubble').fadeIn();
     });
 });
-
-
