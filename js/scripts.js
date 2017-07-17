@@ -25,15 +25,19 @@ function createTweet(input) {
     $('.quote').text(quoteText);
     $('.author').text("Author: " + quoteAuthor);
     $('.tweet').attr('href', tweet);
+    $('.bubble').fadeIn();
+    $('.author').fadeIn();
   }
 }
 
 
 $(document).ready(function() {
-    getQuote();
+  $('.bubble').hide();
+  $('.author').hide();
+    // getQuote();
     $('.button').click(function() {
-        $('.bubble').fadeOut();
+      $('.bubble').fadeOut();
+      $('.author').fadeOut();
         getQuote();
-        $('.bubble').fadeIn();
     });
 });
